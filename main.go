@@ -1,16 +1,10 @@
 package main
 
-import (
-	"context"
-
-	_ "github.com/jackc/pgx/v5/pgxpool"
-	_ "github.com/jackc/pgx/v5/stdlib"
-	"github.com/jmoiron/sqlx"
-	"github.com/sirupsen/logrus"
-)
+import "github.com/sirupsen/logrus"
 
 func main() {
 	logrus.SetFormatter(&logrus.JSONFormatter{})
+	logrus.Info("test")
 	// logrus.Info("Main")
 	// m, err := migrate.New("path", "url")
 	// migrate.NewWithDatabaseInstance("path", "postgres", &sql.DB{})
