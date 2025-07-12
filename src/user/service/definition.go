@@ -8,10 +8,10 @@ import (
 
 type UserServices struct {
 	ctx  context.Context
-	repo *repository.UserRepository
+	repo repository.IUserRepository
 }
 
-func NewUserServices(context context.Context, repository *repository.UserRepository) IUserServices {
+func NewUserServices(context context.Context, repository repository.IUserRepository) IUserServices {
 	return &UserServices{ctx: context, repo: repository}
 }
 
