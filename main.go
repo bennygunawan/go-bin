@@ -1,11 +1,8 @@
 package main
 
 import (
-	"context"
-
 	_ "github.com/jackc/pgx/v5/pgxpool"
 	_ "github.com/jackc/pgx/v5/stdlib"
-	"github.com/jmoiron/sqlx"
 	"github.com/sirupsen/logrus"
 )
 
