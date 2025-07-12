@@ -1,6 +1,10 @@
 package main
 
-import "github.com/sirupsen/logrus"
+import (
+	_ "github.com/jackc/pgx/v5/pgxpool"
+	_ "github.com/jackc/pgx/v5/stdlib"
+	"github.com/sirupsen/logrus"
+)
 
 func main() {
 	logrus.SetFormatter(&logrus.JSONFormatter{})
